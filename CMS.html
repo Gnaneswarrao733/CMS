@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+        }
+        .logo img{
+            height: 45px;
+            width: 55px;
+            margin-left: -30px;
+            border-radius: 3px;
+        }
+        header {
+            background-color: rgb(12, 11, 11);
+            color: rgb(255, 252, 252);
+            display: flex;
+            align-items: center;
+            border: 1px solid;
+            border-color: #b2bbc4;
+            border-left: 0;
+            border-right: 1px;
+            border-bottom: 1;
+        }
+        header ul {
+            display: flex;
+            list-style-type: none; 
+        }
+        header ul li {
+            position: relative;
+            margin-right: 1px;
+        }
+        header ul li a {
+            text-decoration: none;
+            color: rgba(248, 247, 247, 0.7);
+            padding: 10px;
+            display: block;
+        }
+        header ul li a:hover {
+            color: white;
+        }
+        header ul li .links {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            flex-direction: column;
+            background-color: rgb(73, 73, 73);
+            padding: 10px;
+            z-index: 1;
+        }
+        header ul li:hover .links {
+            display: flex;
+        }
+        .button {
+            display: flex;
+            list-style-type: none; 
+            margin-left: 330px;
+            
+        }
+         .button button{
+            padding: 10px 10px;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 1px;
+        }
+        .button button:hover{
+            background-color: #007BFF;
+        }
+        /**page1**/
+        body {
+            color: white;
+        }
+        .page1 {
+            display: flex;
+            background-color: rgb(34, 33, 33);
+            color: #fff;
+        }
+        h1 {
+            font-size: 4em;
+            text-align: left;
+            margin-left: 30px;
+            margin-top: 10%;
+            margin-bottom: 1px;
+            color: dimgrey;
+        }
+        h3 {
+            font-size: 2.8em;
+            text-align: left;  
+            margin-left: 30px;
+            
+            margin-top: 0;
+            margin-bottom: 1px;
+        }
+        p {
+            font-size: 1em;
+            margin-left: 30px;
+            
+            margin-bottom: 30px;   
+        }
+        .page1 p1 {
+            margin-left: 20%;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #457db8;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        .page1 p1:hover {
+            background-color: #0056b3;
+        }
+        .web {
+            margin-top: 50px;
+            text-align: left;
+            color: darkgrey;
+        }
+        .web:hover {
+            color: #fff;
+        }
+        .page1 img {
+            height: 500px;
+            width: 700px;
+            margin-left: 150px; 
+        }
+
+
+
+        .container3 {
+            text-align: left;   
+        }
+        .container3 h1 {
+            font-size: 8em;
+            color: black;
+            margin-left: 13%;
+        }
+        .container3 p {
+            font-size: 2.5em;
+            margin-left: 12%;
+            color: black;
+        }
+        .shop-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+        .box{
+            background-color: rgb(226, 222, 222);
+            border: 0 solid black;
+            height: 170px;
+            width: 30%;           
+            margin-top: 10px;
+        }
+        .box-content i{
+            color: rgb(109, 117, 124);
+            padding: 5% 5%;
+        }
+        .box .box-content :hover{
+            color: black;
+
+        }
+        .box-content p{
+            margin-left: 1rem;
+            margin-top: 15%;
+            color: black;
+        }
+        /* FOOTER1..*/
+        footer{
+           height: 400px;
+           width: 100%;
+           background-color: black;
+           color: white;
+           display: flex;
+           column-gap: 90px;
+           margin-top: 25px;
+           padding-top: 10px;
+           text-align: center;
+           border: 1px solid;
+           border-color: #b2bbc4;
+        }
+        .bb{
+            display: flex;
+            column-gap: 40px;
+            padding: 10px 100px;
+           
+            
+        }
+        .bb h4{
+            font-size: 20px;
+            text-align: center;
+            margin-right: 10%;
+            color: darkgray;
+        }
+        .a{
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .a button{
+            color: white;
+            background-color: rgb(21, 21, 202);
+            padding: 10px 10px;
+            margin-left: 10px;
+        }
+        .a button:hover{
+            background-color: rgb(58, 58, 146);
+        }
+        /* FOOTER 2..*/
+        .ram {
+            width: 100%;
+            background-color: rgb(3, 3, 3);
+            color: darkgray;
+            column-gap: 50px;
+            padding-top: 10px;             
+        }
+        .foot1 {
+            display: flex;
+            column-gap: 90px;
+            padding: 20px 60px;
+        }
+        .foot1 h5  {
+            font-size: 13.9px;
+            text-align: left;
+        }
+        .foot1 h5:hover{
+            color: white;
+            outline-style: none;
+            text-decoration: unset
+        }
+        .foot1 h6 {
+            font-size: 18px;
+            color: white;
+        }
+        .symbols {
+            padding: 1% 7%;
+            padding-top: 5%;
+            padding-bottom: 3%;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid;
+            border-color: #b2bbc4;
+            height: 40px;
+            width: 1070px;
+            margin-left: 23px;
+            margin-top: 10px;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }                         
+        .icons i {
+            padding-right: 20px;
+            font-size: 150%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="webflow-1.png" alt="" height="75px" width="75px">
+            <h4 href="#" class="logo active">Webflow</h4>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Product <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="links">
+                    <li><a href="#">Designer</a></li>
+                    <li><a href="#">CMS</a></li>
+                    <li><a href="#">Ecommerce</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Marketplace <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="links">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Libraries</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Learn</a></li>
+            <li>
+                <a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="links">
+                    <li><a href="#">community</a></li>
+                    <li><a href="#">Ebooks</a></li>
+                    <li><a href="#">Forun</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="button">
+            <li><button>Log in</button></li>
+            <li><button>Contact Sales</button></li>
+            <li class="active"><button>Get started—it's free</button></li>
+        </ul>
+    </header>
+    <!--page1-->
+    <div class="page1">
+        <div>
+            
+            <h1>CMS</h1>
+            <h3>The leading visual, composable CMS</h3>
+            <p>Empower your teams to create on-brand website experiences that convert with Webflow’s visual-first, composable CMS.</p>
+            <p1>Get started — it's free</p1>
+            <p class="web"><i class="fa-solid fa-arrow-down">   LEARN MORE ABOUT THE CMS</i></p>
+        </div>
+        <div>
+            <img src="WhatsApp Image 2024-07-13 at 13.30.43_5e21b3e7.jpg" width="300" height="100" style="float:right">
+        </div>
+    </div>
+
+
+
+    <div class="container3">
+        <h1>All features</h1>
+        <p>Discover everything you can do with Webflow.</p>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-database"> CMS</i>
+            <p>Create fully localized experiences for site visitors around the world</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-magnifying-glass"> SEO</i>
+            <p>Build gated content experiences for your audience.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-brands fa-figma"> Figma to webflow</i>
+            <p>Custom-built environment for content teammates.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-table-cells"> Grid</i>
+            <p>Set up lightning-fast managed hosting in just a few clicks.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-network-wired"> Logic</i>
+            <p>Create production-ready React components visually in Webflow.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-bolt"> Interactions</i>
+            <p>Build websites interactions and animations visually.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER1-->
+    <footer>
+        <div class="a">
+            <h1>Get started for free</h1>
+            <p>Try Webflow for as long as you like with our free Starter <br>plan. Purchase
+                 a paid Site plan to publish, host, and <br>unlock additional features.</p><br>
+            <button>Get started — it's free</button>     
+        </div>
+        <div class="b">
+            <h4>TRANSFORMING THE DESIGN PROCESS AT</h4><br><br>
+            <div class="bb">
+                <div class="b1">
+                    <h4>PHILIPS</h4><br>
+                    <h4>MONDAY</h4><br>
+                    <h4>DROPBOX</h4><br>
+                </div>
+                <div class="b2">
+                    <h4>UPWORK</h4><br>
+                    <h4>DISCORD</h4><br>
+                    <h4>MURAL</h4><br>
+                </div>
+                <div class="b3">
+                    <h4>RAKUTEN</h4><br>
+                    <h4>GREEN HOUSE</h4><br>
+                    <h4>ORANGETHVORY</h4><br>
+                </div>
+                <div class="b4">
+                    <h4>DELL</h4><br>
+                    <h4>TED</h4><br>
+                    <h4>PWC</h4><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER 2-->
+    <div class="ram">
+        <div class="foot1">
+            <div class="a1">
+                <h6>PRODUCT</h6><br>
+                <h5>Platform</h5><br>
+                <h5>Designer</h5><br>
+                <h5>CMS</h5><br>
+                <h5>Ecommerce</h5><br>
+                <h5>Interactions</h5><br>
+                <h5>SEO</h5><br>
+                <h5>Localization</h5><br>
+                <h5>Edit mode</h5><br>
+                <h5>Hosting</h5><br>
+            </div>
+            <div class="a2">
+                <h6>SOLUTIONS</h6><br>
+                <h5>Enterprise</h5><br>
+                <h5>Startups</h5><br>
+                <h5>Global alliances</h5><br>
+                <h5>Agencies</h5><br>
+                <h5>Freelancers</h5><br>
+                <h5>Classrooms</h5><br>
+            </div>
+            <div class="a3">
+                <h6>RESOURCES</h6><br>
+                <h5>University</h5><br>
+                <h5>Blog</h5><br>
+                <h5>Customer stories</h5><br>
+                <h5>Webinars and ebooks</h5><br>
+                <h5>Apps</h5><br>
+                <h5>Libraries</h5><br>
+                <h5>Templates</h5><br>
+                <h5>Developers</h5><br>
+                <h5>Made in Webflow</h5><br>
+            </div>
+            <div class="a4">
+                <h6>COMPANY</h6><br>
+                <h5>About</h5><br>
+                <h5>Press</h5><br>
+                <h5>Webflow Shop</h5><br>
+                <h5>Terms of Service</h5><br>
+                <h5>Privacy policy</h5><br>
+            </div>
+            <div class="a5">
+                <h6>COMMUNITY</h6><br>
+                <h5>Discover the community</h5><br>
+                <h5>Partner with Webflow</h5><br>
+                <h5>Certified partners</h5><br>
+                <h5>Become a Template Designer</h5><br>
+            </div>
+            <div class="a6">
+                <h6>GET HELP</h6><br>
+                <h5>Support</h5><br>
+                <h5>Pricing</h5><br>
+                <h5>Status</h5><br>
+            </div>
+        </div>
+        <div class="symbols">
+        <div id="symbol">&#169; 2024 Webflow, Inc. All rights reserved</div>
+            <div class="icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
